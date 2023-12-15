@@ -176,6 +176,7 @@ main{
 }
 .cardCateg{
     display: flex;
+    flex-wrap: wrap;
     border: solid;
     border-radius: 10px;
     border-color: #8c9197;
@@ -201,10 +202,12 @@ main{
 }
 #rielProd{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 4rem;
 }
+
 .cardProduct{
     display: flex;
     flex-direction: column;
@@ -233,7 +236,7 @@ main{
 }
 
 #callToAction{
-    background-image: url(/Images/baner/0803-kaloductosjpg.webp) ;
+    background-image: url(../Images/baner/0803-kaloductosjpg.webp) ;
     background-repeat: no-repeat;
     height: 30rem;
     display: flex;
@@ -434,7 +437,7 @@ form .campoTexto {
     color: var(--secondary);
 }
 
-@media(max-width: 768px) {
+@media(max-width: 880px) {
     
     nav{
         flex-direction: row;
@@ -443,6 +446,9 @@ form .campoTexto {
         width: 100%;
         justify-content: space-between;
         padding-right: 2rem;
+    }
+    .infoSecundaria{
+        display: none;
     }
     #navbar{
         width: 80%;
@@ -480,18 +486,17 @@ form .campoTexto {
 
     /*----------- MAIN INDEX-----------*/
     #portada img{
-        max-width: 90vh;
+        max-width: 90vw;
     }
     #categorias{
         display: none;
     }
-    #rielProd{
-        flex-wrap: wrap;
-    }
+
     #callToAction{
         height: 18rem;
     }
     #callToAction button{
+        display: none;
         height: 4rem;
         width: 7rem;
         bottom: 15%;
@@ -534,13 +539,10 @@ form .campoTexto {
         padding: 0;
         width: 100%;
     }
-    .infoSecundaria{
-        display: none;
-    }
     #encabezado{
         padding-left: 2rem;
     }
-    .informacion2 img{
+    #shopCart{
         display: none;
     }
     #navbar{
@@ -562,7 +564,8 @@ form .campoTexto {
     }
     /*----------- MAIN INDEX-----------*/
     #portada img{
-        max-width: 50vh;
+        max-width: 90vw;
+        height: auto;
     }
     #callToAction button{
         height: 4rem;
